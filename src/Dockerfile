@@ -1,9 +1,5 @@
 FROM nginx
-LABEL maintainer="Elliot Saba <staticfloat@gmail.com>, Valder Gallo <valergallo@gmail.com>, Bruno Zell <bruno.zzell@gmail.com>"
-
 VOLUME /etc/letsencrypt
-EXPOSE 80
-EXPOSE 443
 
 # Do this apt/pip stuff all in one RUN command to avoid creating large
 # intermediate layers on non-squashable docker installs
