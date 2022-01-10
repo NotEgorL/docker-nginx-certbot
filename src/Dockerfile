@@ -1,4 +1,6 @@
 FROM nginx
+EXPOSE 80
+EXPOSE 443
 VOLUME /etc/letsencrypt
 
 # Do this apt/pip stuff all in one RUN command to avoid creating large
